@@ -10,12 +10,12 @@ nav {
     background-color: var(--black);
     flex-direction: column;
     align-items: center;
-    color: var(--main-font);
+    color: var(--nav-font);
 }
 
 nav a {
     text-decoration: none;
-    color: var(--main-font);
+    color: var(--nav-font);
 }
 
 /*logo*/
@@ -102,7 +102,7 @@ nav .nav-footer .download {
 }
 
 nav .nav-footer .hr {
-    background-color: var(--main-font);
+    background-color: var(--nav-font);
     height: 1px;
     width: 190px;
     margin: 10px 0;
@@ -160,6 +160,28 @@ main .top-bar {
     margin-right: 4px;
 }
 
+/* container */
+
+main .container {
+    margin-top: 90px;
+    color: var(--main-font);
+}
+
+/* category*/
+
+main .container .category {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+main .container .category .col {
+    width: calc(100% /4 - 20px);
+    margin: 0 10px 40px;
+    text-align: center;
+}
+
 
 /* footer*/
 
@@ -206,13 +228,36 @@ footer {
         margin: 0;
     }
 
+    /* category*/
+
+    main .container .category .col {
+        width: calc(100% /3 - 20px);
+    }
+
     .desktop-only {
         display: inline-block
     }
 
 }
 
+@media screen and (min-width:768px) {
+    main .container .category .col {
+        width: calc(100% /5 - 20px);
+    }
+}
 
+@media screen and (min-width:992px) {
+    main .container .category {
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    main .container .category .col {
+        max-width: fit-content;
+    }
+}
+
+/*
 @media screen and (max-height:400px) {
     nav .playlist-container {
         min-height: 170px;
