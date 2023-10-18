@@ -30,26 +30,54 @@ nav .logo {
 
 /*nav ul*/
 
-nav ul {
-    list-style: none;
-}
-
-nav li {
+nav .list-icon li {
     display: flex;
     margin-bottom: 12px;
     margin-left: 5px;
 }
 
-nav li span {
+nav .list-icon li a {
     align-self: center;
+    text-decoration: none;
+    color: var(--main-font);
 }
 
-nav li img {
+nav .list-icon li img {
     height: 22px;
     filter: opacity(0.5);
     margin-right: 5px;
 }
 
+/*Playlist*/
+
+nav .playlist-container {
+    width: 100%;
+    overflow-y: auto;
+}
+
+nav .playlist-container h3 {
+    color: var(--white);
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+nav .playlist-container .add {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--black);
+    background-color: #a3a3a3;
+    display: inline-block;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+nav .playlist-container .crea {
+    align-self: center;
+}
+
+nav .playlist-container li {
+    margin-top: 25px;
+}
 
 /*big-container*/
 
@@ -64,6 +92,10 @@ nav li img {
 footer {
     height: 90px;
     background-color: var(--footer-bg);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99;
 }
 
 /*media queres*/
@@ -80,7 +112,7 @@ footer {
     }
 
     /*nav ul*/
-    nav li {
+    nav .list-icon li {
         margin-left: 0;
     }
 
