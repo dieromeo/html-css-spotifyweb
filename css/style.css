@@ -2,21 +2,21 @@
 @import url('_partials/common.css');
 @import url('_partials/variables.css');
 
+main {
+    height: calc(100vh - 90px);
+}
+
 /*nav*/
 
 nav {
     min-width: 50px;
-    height: calc(100vh - 90px);
     background-color: var(--black);
     flex-direction: column;
     align-items: center;
     color: var(--nav-font);
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--nav-font);
-}
+
 
 /*logo*/
 
@@ -57,6 +57,7 @@ nav .playlist-container {
     flex-direction: column;
     flex-grow: 1;
     overflow: hidden;
+    width: 100%;
 }
 
 nav .playlist-container .list {
@@ -149,7 +150,7 @@ main .top-bar {
     height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    left: 0;
+    left: 50px;
     right: 0;
 }
 
@@ -172,6 +173,9 @@ main .top-bar {
 
 main .container {
     margin-top: 90px;
+}
+
+main .big-container {
     color: var(--main-font);
 }
 
@@ -190,6 +194,49 @@ main .container .category .col {
     text-align: center;
 }
 
+/* recently-played*/
+
+#recently-played {
+    padding-left: 20px;
+    padding-right: 30px;
+    overflow-y: auto;
+}
+
+#recently-played h2,
+#recently-played h3 {
+    color: var(--white);
+}
+
+#recently-played h2 {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+#recently-played h3 {
+    margin-bottom: 5px;
+    font-size: .9375rem;
+}
+
+#recently-played .song-container {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#recently-played .song-name {
+    text-align: center;
+}
+
+#recently-played .col {
+    width: calc((100% - 10px) /2);
+}
+
+#recently-played .image-container {
+    margin-bottom: 15px;
+}
+
+#recently-played .image-container img {
+    width: 100%;
+}
 
 /* footer*/
 
@@ -239,6 +286,12 @@ footer {
 
     nav .nav-footer .download {
         margin: 0;
+    }
+
+    /* top-bar*/
+
+    main .top-bar {
+        left: 230px;
     }
 
     /* category*/
