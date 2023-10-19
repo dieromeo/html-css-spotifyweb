@@ -2,10 +2,6 @@
 @import url('_partials/common.css');
 @import url('_partials/variables.css');
 
-main {
-    height: calc(100vh - 90px);
-}
-
 /*nav*/
 
 nav {
@@ -15,8 +11,6 @@ nav {
     align-items: center;
     color: var(--nav-font);
 }
-
-
 
 /*logo*/
 
@@ -140,8 +134,7 @@ nav .nav-footer .user span {
 
 .big-container {
     background-color: var(--main-bg);
-    width: 100%;
-    /*debug*/
+    overflow-y: auto;
 }
 
 /* top-bar */
@@ -199,7 +192,6 @@ main .container .category .col {
 #recently-played {
     padding-left: 20px;
     padding-right: 30px;
-    overflow-y: auto;
 }
 
 #recently-played h2,
@@ -310,6 +302,10 @@ footer {
     main .container .category .col {
         width: calc(100% /5 - 20px);
     }
+
+    #recently-played .col {
+        width: calc((100% - 30px) /4);
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -320,6 +316,10 @@ footer {
 
     main .container .category .col {
         max-width: fit-content;
+    }
+
+    #recently-played .col {
+        width: calc((100% - 50px) /6);
     }
 }
 
