@@ -189,45 +189,58 @@ main .container .category .col {
 
 /* recently-played*/
 
-#recently-played {
-    padding-left: 20px;
-    padding-right: 30px;
-}
-
-#recently-played h2,
-#recently-played h3 {
-    color: var(--white);
-}
-
 #recently-played h2 {
-    font-size: 20px;
     margin-bottom: 35px;
 }
 
-#recently-played h3 {
+#recently-played h2,
+#for-you h2 {
+    font-size: 20px;
+}
+
+#recently-played h3,
+#for-you h3 {
     margin-bottom: 5px;
     font-size: .9375rem;
 }
 
-#recently-played .song-container {
+#recently-played .song-container,
+#for-you .song-container {
     gap: 10px;
     flex-wrap: wrap;
 }
 
-#recently-played .song-name {
+#recently-played .song-name,
+#for-you .song-name {
     text-align: center;
 }
 
-#recently-played .col {
+#recently-played .col,
+#for-you .col {
     width: calc((100% - 10px) /2);
 }
 
-#recently-played .image-container {
+#recently-played .image-container,
+#foryou .image-container {
     margin-bottom: 15px;
 }
 
-#recently-played .image-container img {
+#recently-played .image-container img,
+#for-you .image-container img {
     width: 100%;
+}
+
+/* for you*/
+#for-you {
+    margin-top: 50px;
+}
+
+#for-you h2 {
+    margin-bottom: 10px;
+}
+
+#for-you .song-container {
+    margin-top: 25px;
 }
 
 /* footer*/
@@ -303,7 +316,8 @@ footer {
         width: calc(100% /5 - 20px);
     }
 
-    #recently-played .col {
+    #recently-played .col,
+    #for-you .col {
         width: calc((100% - 30px) /4);
     }
 }
@@ -318,7 +332,8 @@ footer {
         max-width: fit-content;
     }
 
-    #recently-played .col {
+    #recently-played .col,
+    #for-you .col {
         width: calc((100% - 50px) /6);
     }
 }
