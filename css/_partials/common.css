@@ -21,13 +21,23 @@ a {
 }
 
 #recently-played,
-#for-you {
+#for-you,
+#artist {
     padding-left: 20px;
     padding-right: 30px;
 }
 
 #recently-played h2,
 #recently-played h3,
-#for-you h2 {
+#artist h3,
+#for-you h2,
+#for-you h3,
+#artist h2 {
     color: var(--white);
+}
+
+#recently-played h2,
+#for-you h2,
+#artist h2 {
+    font-size: 20px;
 }

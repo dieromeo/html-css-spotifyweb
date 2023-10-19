@@ -193,10 +193,6 @@ main .container .category .col {
     margin-bottom: 35px;
 }
 
-#recently-played h2,
-#for-you h2 {
-    font-size: 20px;
-}
 
 #recently-played h3,
 #for-you h3 {
@@ -205,23 +201,27 @@ main .container .category .col {
 }
 
 #recently-played .song-container,
-#for-you .song-container {
+#for-you .song-container,
+#artist .artist-container {
     gap: 10px;
     flex-wrap: wrap;
 }
 
 #recently-played .song-name,
-#for-you .song-name {
+#for-you .song-name,
+#artist .artist-name {
     text-align: center;
 }
 
 #recently-played .col,
-#for-you .col {
+#for-you .col,
+#artist .col {
     width: calc((100% - 10px) /2);
 }
 
 #recently-played .image-container,
-#foryou .image-container {
+#for-you .image-container,
+#artist .image-container {
     margin-bottom: 15px;
 }
 
@@ -231,16 +231,35 @@ main .container .category .col {
 }
 
 /* for you*/
-#for-you {
+#for-you,
+#artist {
     margin-top: 50px;
 }
 
-#for-you h2 {
+#for-you h2,
+#artist h2 {
     margin-bottom: 10px;
 }
 
-#for-you .song-container {
+#for-you .song-container,
+#artist .artist-container {
     margin-top: 25px;
+}
+
+#artist .image-container {
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#artist .image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#artist {
+    margin-bottom: 100px;
 }
 
 /* footer*/
@@ -317,7 +336,8 @@ footer {
     }
 
     #recently-played .col,
-    #for-you .col {
+    #for-you .col,
+    #artist .col {
         width: calc((100% - 30px) /4);
     }
 }
@@ -333,7 +353,8 @@ footer {
     }
 
     #recently-played .col,
-    #for-you .col {
+    #for-you .col,
+    #artist .col {
         width: calc((100% - 50px) /6);
     }
 }
