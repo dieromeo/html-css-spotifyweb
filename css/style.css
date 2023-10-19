@@ -53,7 +53,13 @@ nav .list-icon li img {
 /*Playlist*/
 
 nav .playlist-container {
-    width: 100%;
+    display: none;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+nav .playlist-container .list {
     overflow-y: auto;
 }
 
@@ -82,14 +88,8 @@ nav .playlist-container li {
 }
 
 /*nav footer*/
-
-nav .nav-footer {
-    position: fixed;
-    bottom: 91px;
-    left: 12px;
-    background-color: var(--black);
-    padding-top: 20px;
-    padding-bottom: 7px;
+.nav-footer {
+    margin-top: auto;
 }
 
 nav .nav-footer .download img {
@@ -213,6 +213,10 @@ footer {
         margin-left: 0;
     }
 
+    nav .playlist-container {
+        display: flex;
+    }
+
     /* nav footer*/
 
 
@@ -235,7 +239,7 @@ footer {
     }
 
     .desktop-only {
-        display: inline-block
+        display: inline-block;
     }
 
 }
