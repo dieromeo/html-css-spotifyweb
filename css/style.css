@@ -17,6 +17,11 @@ nav {
     color: var(--nav-font);
 }
 
+nav li:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
 /*logo*/
 
 nav .logo-small {
@@ -47,6 +52,12 @@ nav .list-icon li img {
     height: 22px;
     filter: opacity(0.5);
     margin-right: 5px;
+}
+
+nav .list-icon li:hover a,
+nav .list-icon li:hover img {
+    color: var(--white);
+    filter: none;
 }
 
 /*Playlist*/
@@ -85,6 +96,16 @@ nav .playlist-container .crea {
 
 nav .playlist-container li {
     margin-top: 25px;
+}
+
+nav .playlist-container .crea:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+nav .playlist-container .add:hover {
+    background-color: var(--white);
+    cursor: pointer;
 }
 
 /*nav footer*/
@@ -135,6 +156,10 @@ nav .nav-footer .user span {
     align-self: center;
 }
 
+nav .nav-footer .download a:hover {
+    color: var(--white);
+}
+
 /*big-container*/
 
 .big-container {
@@ -150,6 +175,7 @@ main .top-bar {
     position: fixed;
     left: 50px;
     right: 0;
+    z-index: 99;
 }
 
 .big-container .btn {
@@ -165,6 +191,12 @@ main .top-bar {
 .button {
     text-align: right;
     margin-right: 20px;
+}
+
+.top-bar button:hover {
+    font-size: 11px;
+    transition: font-size 0.1s;
+    cursor: pointer;
 }
 
 /* container */
@@ -192,12 +224,41 @@ main .container .category .col {
     text-align: center;
 }
 
+main .category a:hover {
+    color: var(--white);
+}
+
 /* recently-played*/
 
 #recently-played h2 {
     margin-bottom: 35px;
 }
 
+#recently-played .image-container,
+#for-you .image-container {
+    position: relative;
+}
+
+#recently-played .image-container i,
+#for-you .image-container i {
+    font-size: 40px;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#recently-played .image-container:hover img,
+#for-you .image-container:hover img {
+    opacity: 0.3;
+}
+
+#recently-played .image-container:hover i,
+#for-you .image-container:hover i {
+    opacity: 1;
+}
 
 #recently-played h3,
 #for-you h3 {
