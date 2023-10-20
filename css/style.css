@@ -1,6 +1,11 @@
 @import url('_partials/reset.css');
 @import url('_partials/common.css');
 @import url('_partials/variables.css');
+/* main*/
+
+main {
+    height: calc(100vh - 90px);
+}
 
 /*nav*/
 
@@ -159,7 +164,7 @@ main .top-bar {
 
 .button {
     text-align: right;
-    margin-right: 4px;
+    margin-right: 20px;
 }
 
 /* container */
@@ -267,10 +272,42 @@ main .container .category .col {
 footer {
     height: 90px;
     background-color: var(--footer-bg);
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 99;
+
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+footer .footer-left,
+footer .footer-right {
+    width: 30%;
+    align-self: center;
+    align-content: center;
+}
+
+footer .footer-left {
+    color: var(--main-font);
+    align-items: center;
+}
+
+footer .footer-left h4 {
+    color: var(--white);
+}
+
+footer .footer-left .image-container {
+    width: 25px;
+    margin-right: 10px;
+}
+
+footer .footer-left .image-container img {
+    width: 100%;
+}
+
+footer .footer-left .song {
+    margin-right: 20px;
+}
+
+footer .footer-left i {
+    display: block;
 }
 
 /*media queres*/
@@ -340,6 +377,11 @@ footer {
     #artist .col {
         width: calc((100% - 30px) /4);
     }
+
+    footer .footer-left i {
+        display: inline-block;
+        margin-right: 10px;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -357,6 +399,7 @@ footer {
     #artist .col {
         width: calc((100% - 50px) /6);
     }
+
 }
 
 /*
