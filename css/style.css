@@ -60,6 +60,19 @@ nav .list-icon li:hover img {
     filter: none;
 }
 
+nav .list-icon .home {
+    position: relative;
+}
+
+nav .list-icon .green-bar {
+    width: 2px;
+    height: 30px;
+    background-color: greenyellow;
+    position: absolute;
+    top: -5px;
+    left: -20px;
+}
+
 /*Playlist*/
 
 nav .playlist-container {
@@ -226,6 +239,19 @@ main .container .category .col {
 
 main .category a:hover {
     color: var(--white);
+}
+
+.category :first-child {
+    position: relative;
+}
+
+.category .green-bar {
+    width: 30px;
+    height: 2px;
+    background-color: greenyellow;
+    position: absolute;
+    left: 30%;
+    top: 15px;
 }
 
 /* recently-played*/
