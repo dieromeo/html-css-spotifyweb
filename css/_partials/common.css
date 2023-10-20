@@ -41,3 +41,7 @@ a {
 #artist h2 {
     font-size: 20px;
 }
+
+i:hover {
+    cursor: pointer;
+}
